@@ -1,0 +1,27 @@
+/*---------------------------------------Colors---------------------------------------*/
+/* Orange: #ff8A5B Lavender: #A09BE7 dark: #401F3E Mint: #C5E7E2 Sage: #8B9D83 Red: #ff6161 */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+section{
+    background-color: #401F3E;
+}
+.ui-menu-color-crisis{
+    background-color: #ff6161
+}
+.ui-menu-color-advice{
+    background-color: #ff8A5B ;
+}
+.ui-menu-color-employers{
+    background-color:#8B9D83 ;
+}
+.ui-menu-color-mhealth{
+    background-color: #A09BE7;
+}
+.ui-menu-color-home{
+    background-color: #401F3E ;
+}
+
+/*---------------------------------------Margins, paddings, position---------------------------------------*/
+.inline-block{
+    display: inline-block;
+}
