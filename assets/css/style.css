@@ -39,6 +39,7 @@ body{
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 600;
     color: #401F3E;
+    overflow: visible;
 }
 #mobile-header {
   margin-left: 5px;
@@ -63,6 +64,14 @@ body{
 #back:hover{
   background-color: #728a86;
 }
+#top-button a{
+  color: #401F3E;
+  width: 50px;
+  height: 50px;
+}
+#top-button:hover{
+  background-color: #728a86;
+}
 
 .btn-employer:hover{
     background-color: #6f7e69;
@@ -85,6 +94,9 @@ color: #C5E7E2
 }
 #quiz{
     background-color: #a1c0bbc4 ;
+}
+header {
+  background-color: #401F3E;
 }
 /*---------------------------------------Margins, paddings, position---------------------------------------*/
 
@@ -238,7 +250,22 @@ align-content: center;
   border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #401F3E 48%, rgba(255, 255, 255, 0) 100%);
   border-image-slice: 1;
 }
-
+#top-button{
+  display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    background-color: #C5E7E2;
+    position: sticky;
+    margin-right: 5px;
+    top: 30px;
+    right: 5%;
+    color:#401F3E;
+    border: solid 2px;
+    border-color: #401F3E;
+}
 
   /*----------------------------------------------------------Media queries-----------------------------------*/
   @media(max-width: 992px) {
@@ -277,6 +304,24 @@ align-content: center;
         color:#401F3E;
         border: solid 2px;
         border-color: #401F3E;
+    }
+    #top-button{
+      display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        align-content: center;
+        text-align: center;
+        background-color: #C5E7E2;
+        position: sticky;
+        margin-right: 5px;
+        top: 30px;
+        left: 90%;
+        color:#401F3E;
+        border: solid 2px;
+        border-color: #401F3E;
+        position: -webkit-sticky;
+      
     }
     .articles{
         display: none;

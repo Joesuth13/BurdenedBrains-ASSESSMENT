@@ -7,10 +7,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    
-    
- <title>Bootstrap demo</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Burdened Brains</title>
 
 
 </head>
@@ -21,57 +21,409 @@
 
 <body>
     <header>
+        <div class="row g-0">
 
-    </header>
-    <nav class="navbar navbar light bg-light navbar-expand-sm">
-        <a href="index.html" class="navbar-brand">Burdened Brains</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link active" href="/mhealth.html">Mental health first aid</a>
-            </li>
-            <li class="nav-item mr-2 d-block d-md-none">
-                <a class="nav-link" href="/employers.html">Employers</a>
-            </li>
-            <li class="nav-item mr-2 d-block d-md-none"></li>
-                <a class="nav-link" href="/advice.html">Tips & Tricks</a>
-            </li>
-            <li class="nav-item mr-2 d-block d-md-none">
-                <a class="nav-link" href="/crisis.html">Crisis</a>
-            </li>
-            
-        </ul>
-        <div class="d-none d-md-block">
-            <p class="navbar-text my-auto mr-2">
-                Great whiskey delivered to your door
-            </p>
-            <a href="/login">Sign in / Sign up</a>
+            <div id="logo-box" class="col-1">
+                <img id="logo" src="assets/images/Burdened_Brains-removebg-preview.png" alt="Burdened brains logo">
+            </div>
+            <div class="col-9">
+                <h3 id="mobile-header">Burdened Brains</h3>
+            </div>
         </div>
 
+
+    </header>
+
+
+
+
+
+
+
+    <nav class="navbar g-0" id="nav">
+        <div class="row g-0">
+
+            <div class="col-3 ui-menu-color-mhealth inline-block nav-item"><a href="mhealth.html"
+                    class="hvr-sweep-to-bottom"><i class="fa-solid fa-brain" aria-hidden="true"></i><br><span>Mental
+                        Health</span></a>
+            </div>
+            <div class="col-3 ui-menu-color-advice inline-block nav-item"><a href="advice.html"
+                    class="hvr-sweep-to-bottom"><i class="fa-solid fa-wand-magic-sparkles"></i><br><span>Tips &
+                        Tricks</span></a>
+            </div>
+            <div class="col-3 ui-menu-color-employers inline-block nav-item"><a href="employers.html"
+                    class="hvr-sweep-to-bottom"><i class="fa-solid fa-building"
+                        aria-hidden="true"></i><br><span>Employers</span></a>
+            </div>
+            <div class="col-3 ui-menu-color-crisis inline-block nav-item"><a href="crisis.html"
+                    class="hvr-sweep-to-bottom"><i class="fa-solid fa-phone"
+                        aria-hidden="true"></i><br><span>Crisis</span></a>
+            </div>
+
+        </div>
     </nav>
 
-    <Main>
-        <section>
+
+
+    <!--   Drop-up menus for bottom nav
+    <div class="dropup">
+        <button class="dropbtn"><i class="fa-solid fa-brain" aria-hidden="true"></i>Mental Health</button>
+        <div class="dropup-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div> 
+    -->
 
 
 
-        </section>
-        <aside>
-          
-            <article></article>
-            <article></article>
-            <article></article>
-
-        </aside>
-        
+    <section class="container-fluid questions bg-color-questions">
 
 
-    </Main>
+        <main>
+            <!--                                 Button menu
+            <section id="quiz">
+                <h1> Which of the following best describes you?</h1>
+                <div id="home" class="ui-menu-color-home"><a href="index.html" class="hvr-sweep-to-bottom"><i
+                            class="fa-solid fa-house" aria-hidden="true"></i></a>
+                </div>
+                <div id="buttons">
+
+                    <a type="button" href="employers.html" class="btn button btn-employer panel-btn">I am an employer,
+                        looking for advice about my neurodivergent employee(s)</a>
+                    <a type="button" href="advice.html" class=" btn button btn-tips panel-btn">I'm looking for general
+                        advice on living with a Neurodiverse condition</a>
+                    <a type="button" href="mhealth.html" class="btn button btn-mhealth panel-btn">I'm struggling with my
+                        mental health. <br>Or someone I know is struggling</a>
+                    <a type="button" href="crisis.html" class="btn button btn-crisis panel-btn">I can't cope and need
+                        immediate help (Crisis)</a>
+
+                </div>
+
+            </section>
+        -->
+            <section class="page-heading">
+                <div id="back" class="inline-block ui-menu-color-home"><a href="index.html"
+                        class="hvr-sweep-to-bottom"><i class="fa-solid fa-arrow-left"></i></a></div>
+                <h2 class="col 10 inline-block">Mental health for Neuro-divergent people.</h2>
+            </section>
+            <main>
+
+                <h4><strong>Neuro-divergents have different needs:</strong></h4>
 
 
-    <footer>
+                <p> There is alot of advice out there for improving your mental health, but this is advice is often
+                    unhelpful for Neuro-divergents<br>
+                    So, to get you relevant advice, we need to know what neurodiverse condition you have:</p>
+                <section id="quiz">
+                    <h3> Which of the following best describes your main neurodiverse condition?</h3>
+
+                    <div id="buttons">
+
+                        <a type="button" href="#adhd" class="btn button btn-employer panel-btn">I have ADHD (or both
+                            Autism and ADHD)</a>
+                        <a type="button" href="#autism" class=" btn button btn-tips panel-btn">I am Autistic</a>
+                        <a type="button" href="#tourrettes" class="btn button btn-mhealth panel-btn">I have
+                            Tourrettes</a>
+                        <a type="button" href="#other" class="btn button btn-crisis panel-btn">I have mainly suffer
+                            with dylexia, dyscalculia, dyspraxia or other moderate learning difficulty</a>
+
+                    </div>
+
+                </section>
+                <div id="top-button" class="ui-menu-color-home"><a href="#quiz" class="hvr-sweep-to-bottom"><i
+                            class="fa-solid fa-arrow-up"></i></a>
+
+                </div>
+                <div id="general" class="links container-fluid g-0">
+                    <h1> General advice and support:
+
+                    </h1>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="https://www.cipd.org/uk/knowledge/guides/neuroinclusion-work/">CIPD
+                                UK</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>This will give you an excellent understanding of the principles of Neuroinclusion</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 2</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Ideas and advice around reasonable adjustments</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 3</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Lorum ipsum blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="adhd" class="links container-fluid g-0">
+                    <h1> ADHD advice and support:
+
+                    </h1>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="https://www.cipd.org/uk/knowledge/guides/neuroinclusion-work/">CIPD
+                                UK</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>This will give you an excellent understanding of the principles of Neuroinclusion</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 2</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Ideas and advice around reasonable adjustments</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 3</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Lorum ipsum blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="audhd" class="links container-fluid g-0">
+                    <h1> Autism + ADHD (AuDHD) advice and support:
+
+                    </h1>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="https://www.cipd.org/uk/knowledge/guides/neuroinclusion-work/">CIPD
+                                UK</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>This will give you an excellent understanding of the principles of Neuroinclusion</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 2</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Ideas and advice around reasonable adjustments</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 3</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Lorum ipsum blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="autism" class="links container-fluid g-0">
+                    <h1> Autistic spectrum disorder (ASD) advice and support:
+
+                    </h1>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="https://www.cipd.org/uk/knowledge/guides/neuroinclusion-work/">CIPD
+                                UK</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>This will give you an excellent understanding of the principles of Neuroinclusion</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 2</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Ideas and advice around reasonable adjustments</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 3</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Lorum ipsum blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tourrettes" class="links container-fluid g-0">
+                    <h1> Tourrettes advice and support:
+
+                    </h1>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="https://www.cipd.org/uk/knowledge/guides/neuroinclusion-work/">CIPD
+                                UK</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>This will give you an excellent understanding of the principles of Neuroinclusion</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 2</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Ideas and advice around reasonable adjustments</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 3</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Lorum ipsum blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="other" class="links container-fluid g-0">
+                    <h1> Other conditions advice and support:
+
+                    </h1>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="https://www.cipd.org/uk/knowledge/guides/neuroinclusion-work/">CIPD
+                                UK</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>This will give you an excellent understanding of the principles of Neuroinclusion</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 2</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Ideas and advice around reasonable adjustments</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-2 sp-img">
+                            <img src="assets/images/Burdened Brains.png" alt="burdened brains character ">
+                        </div>
+                        <div class="col-2 sp-link text-center">
+                            <a target="_blank" href="#">Link 3</a>
+                        </div>
+                        <div class="col-7 sp-label">
+                            <p>Lorum ipsum blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </main>
+
+    </section>
+
+    <aside class="articles bg-color-articles inline-block">
+        <div class="row g-0">
+            <article class="col">
+                <div class="card" style="width: 100%;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                            the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card" style="width: 100%;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                            the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card" style="width: 100%;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                            the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </aside>
+
+
+
+    </main>
+
+    <footer class="bg-color-footer">
 
     </footer>
 
