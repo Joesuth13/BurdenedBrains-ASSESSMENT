@@ -106,8 +106,9 @@ header {
 }
 #logo-box{
   height: 40px;
-  width: auto;
+  
   overflow: hidden;
+  align-items: center;
 }
 #logo{
   height: 60px;
@@ -142,6 +143,10 @@ header {
     align-content: space-between;
     justify-content: space-evenly;
   }
+  #quiz h1{
+    font-size: 20px;
+  }
+
   #buttons{ 
     display: flex;
     flex-direction: column;
@@ -186,6 +191,32 @@ header {
   }
   .nav-item a span{
     font-size: 13px;
+    font-weight: 600;
+  }
+  #top-nav{
+    align-self: flex-end;
+  }
+  #top-nav .nav-item{
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    line-height: 0.5em;
+    padding-top: 4px;
+    
+  }
+  #top-nav .nav-item a{
+    display: block;
+    text-decoration: none;
+    color: #401F3E;
+    height: 50px;
+    width: 100%;
+   
+  }
+  #top-nav .nav-item a span{
+    font-size: 10px;
     font-weight: 600;
   }
   /* The container <div> - needed to position the dropup content */
@@ -265,6 +296,43 @@ align-content: center;
     color:#401F3E;
     border: solid 2px;
     border-color: #401F3E;
+}
+#home{
+  display:inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  background-color: #C5E7E2;
+  position: fixed;
+  top: 10vh;
+  right: 1rem;
+  color:#401F3E;
+  border: solid 4px;
+  border-color: #401F3E;
+}
+ /*----------------------------------------------------------Jumbotron-----------------------------------*/
+ 
+.jumbotron{
+  color:  #401F3E;
+  background-image: url(../images/Desktopbrainbanner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  box-shadow: inset 0 0 0 1000px rgba(22, 4, 43, 0.459);
+}
+
+.outline-text{
+  font-family: "open sans", Arial;
+  -webkit-text-fill-color: #C5E7E2;
+  font-size: 40px;
+  -webkit-text-stroke: 2px;
+  font-weight: 900;
+ 
+
+
 }
 
   /*----------------------------------------------------------Media queries-----------------------------------*/
@@ -346,4 +414,11 @@ align-content: center;
 
 
     }
+
+    #quiz h1{
+      font-size: 35px;
+    }
   }
+
+
+ 
