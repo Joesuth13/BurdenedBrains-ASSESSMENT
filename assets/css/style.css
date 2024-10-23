@@ -47,6 +47,7 @@ body{
   color: #C5E7E2;
   padding-top: 2vh;
   min-width: 60px;
+  font-size: 2rem;
 }
 
 #home a{
@@ -170,7 +171,7 @@ h1{
     align-content: space-between;
     justify-content: space-evenly;
   }
-  #quiz h1{
+  #quiz h2{
     font-size: 32px;
   }
 
@@ -222,7 +223,7 @@ h1{
   }
   .card-text{
     font-size: 1.25rem;
-    font-family: "open sans" Arial, sans-serif;
+    
   }
   .card-img-overlay{
     box-shadow: inset 0 0 0 1000px rgba(39, 7, 77, 0.664);
@@ -526,7 +527,7 @@ footer p{
         border: solid 4px;
         border-color: #401F3E;
     }
-    #quiz h1{
+    #quiz h2{
         display: inline-block;
         margin-right: 70px;
 
@@ -567,10 +568,4 @@ footer p{
     
     height:50px
   }
- 
-
-  }
-@media screen and(min-width:1580) {
-  
-}
-  
+  } 
